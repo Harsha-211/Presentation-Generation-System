@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Presentation AI</title>
+    </head>
+    <body>
+        <h2>Enter your Meals</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <label for='keyword'>Key Word</label>
+            <input type = 'text' name='keyword' id='keyword' placeholder='Enter your key Word'>
+            <label for = 'number'>Number Of Slides</label>
+            <input type = 'number' name = 'number' id='number' placeholder = 'Enter number of slides Required'>
+            <button type='submit'>GET Data</button>
+        </form>
+    </body>
+</html>
